@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
 .padding-t-20 {
   padding-top: 20px;
 }
 
 .padding-btm-20 {
   padding-bottom: 20px;
+}
+
+.list-unstyled {
+  list-style: none;
 }
 
 .main {
@@ -33,13 +44,87 @@
 .logo img {
   width: 80%;
   height: auto;
+}
 
+.header-main-nav {
+}
+
+.header-main-nav ul li img {
+  width: 10%;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+.header-main-nav ul li {
+  padding-bottom: 5px;
+  line-height: 25px;
 }
 
 .main-main-nav {
   flex-grow: 2;
   overflow-y: scroll;
 }
+
+.create_playlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+
+.main-main-nav .create_playlist .button_playlist {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 26px;
+  color: black;
+  margin-right: 5px;
+  background-color: white;
+}
+
+.main-main-nav ul li {
+  padding-bottom: 10px;
+}
+
+.footer-main-nav {
+
+}
+
+.footer-main-nav .install_app p {
+  line-height: 30px;
+  border-bottom: 1px solid white;
+}
+
+.footer-main-nav .install_app p span {
+  margin-right: 5px;
+  color: white;
+}
+
+.footer-main-nav .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-main-nav .user img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  al
+}
+
+.footer-main-nav .user p {
+  display: inline;
+
+}
+
+
+
+
 
 /* main */
 .main-content {
