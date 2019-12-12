@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.padding-t-20 {
+  padding-top: 20px;
+}
+
+.padding-btm-20 {
+  padding-bottom: 20px;
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -13,17 +21,39 @@
 }
 
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 220px;
   height: 100%;
+  padding: 20px;
   background-color: red;
 }
 
+.logo img {
+  width: 80%;
+  height: auto;
+
+}
+
+.main-main-nav {
+  flex-grow: 2;
+  overflow-y: scroll;
+}
+
+/* main */
 .main-content {
   width: calc(100% - 220px);
   height: 100%;
-  background-color: blue;
   overflow-y: scroll;
-  padding: 20px;
+  background-color: blue;
+}
+
+.call-to-action {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 footer {
