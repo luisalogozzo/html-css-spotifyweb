@@ -136,12 +136,16 @@ a {
 .main-content {
   width: calc(100% - 220px);
   height: 100%;
+  padding: 15px;
   overflow-y: scroll;
   background-color: #141922;
 }
 
 .call-to-action {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  right:0;
+  width: calc(100% - 220px);
   height: 90px;
   text-align: right;
   background-color: rgba(0, 0, 0, 0.7);
@@ -160,6 +164,7 @@ a {
 }
 
 .discover_nav {
+  margin-top: 90px;
 text-align: center;
 }
 
