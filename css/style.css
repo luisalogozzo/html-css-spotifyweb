@@ -229,7 +229,119 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 90px;
-  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #282828;
+}
+
+.playback_track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.playback_track div {
+
+}
+
+.playback_track p {
+  font-size: 10px;
+}
+
+.playback_track img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.brano_nome {
+  margin-right: 30px;
+}
+
+.brano_nome p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.playback_track i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+.playback_time_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.playback_time_icons i {
+  margin-right: 20px;
+}
+
+.playback_time_icons .fa-play-circle {
+  font-size: 30px;
+}
+
+.playback_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.playback_bar span {
+  font-size: 10px;
+}
+
+.playback_bar .hr-1 {
+    width: 77px;
+    margin-left: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+
+.playback_bar  .hr-2 {
+  width: 313px;
+  margin-right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.volume i {
+
+
+}
+
+.volume ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.volume ul li {
+margin-right: 15px;
+  font-size: 12px;
+}
+
+.hr-volume1{
+  width: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
+
+.hr-volume2 {
+  width: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
