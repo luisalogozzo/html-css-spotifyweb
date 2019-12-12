@@ -25,6 +25,10 @@ a {
   padding-bottom: 20px;
 }
 
+.margin-t-30 {
+  margin-top: 30px;
+}
+
 .list-unstyled {
   list-style: none;
 }
@@ -148,7 +152,7 @@ a {
   width: calc(100% - 220px);
   height: 90px;
   text-align: right;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   line-height: 90px;
 
 }
@@ -165,7 +169,8 @@ a {
 
 .discover_nav {
   margin-top: 90px;
-text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .discover_nav ul li {
@@ -174,6 +179,50 @@ text-align: center;
   text-transform: uppercase;
   font-size: 12px;
 }
+
+.music_list {
+
+}
+
+.h2-section {
+  margin-bottom: 20px;
+}
+
+.music_list h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.music_list nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.music_list .track {
+  width: calc((100% / 6) - 24px);
+  height: auto;
+  margin-right: 20px;
+}
+
+.track img {
+  width: 100%;
+}
+
+.track h6 {
+  font-size: 16px;
+  margin: 5px 0 5px;
+}
+
+.h2-section p,
+.track p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+.border-rounded {
+  border-radius: 50%;
+}
+
 
 
 footer {
