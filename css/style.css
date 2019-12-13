@@ -495,11 +495,10 @@ footer {
   width: 12px;
   height: 12px;
   background-color: white;
-  border: solid 1px black;
   border-radius: 50%;
   position: absolute;
   top: -4px;
-  left: 98%;
+  left: 100%;
 }
 
 .playback_bar:hover .hr-1 {
