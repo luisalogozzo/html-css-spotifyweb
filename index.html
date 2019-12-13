@@ -11,17 +11,26 @@
   <body>
     <main class="main">
       <div class="main-nav">
-        <section class="logo">
-          <a href="#"><img src="img/logo.svg" alt=""></a>
+        <section class="hidden-sm loghi_small">
+          <ul>
+            <li><a href="#"><img src="img/logo-small.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/home.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/search.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/libreria.svg" alt=""></a></li>
+          </ul>
         </section>
-        <section class="header-main-nav padding-btm-20 padding-t-20">
+
+        <section class="header-main-nav padding-btm-20 hidden-xs">
+          <div class="logo padding-btm-20">
+            <a href="#"><img src="img/logo.svg" alt=""></a>
+          </div>
           <ul class="list-unstyled">
             <li class="border_left_green"><img  src="img/home.svg" alt="">Home</li>
             <li><img src="img/search.svg" alt="">Cerca</li>
             <li><img src="img/libreria.svg" alt="">La tua libreria</li>
           </ul>
         </section>
-        <section class="main-main-nav">
+        <section class="main-main-nav hidden-xs">
           <h5>PLAYLIST</h5>
           <div class="create_playlist">
             <a class="button_playlist" href="#"><i class="fas fa-plus"></i> </a>
@@ -38,14 +47,21 @@
 
           </ul>
         </section>
-        <section class="footer-main-nav">
-          <div class="install_app">
+        <section class="footer-main-nav ">
+          <div class="install_app  hidden-xs">
             <p><span><i class="far fa-arrow-alt-circle-down"></i></span>Installa app</p>
           </div>
 
-          <div class="user">
+          <div class="user hidden-xs">
             <img src="img/profile.svg" alt="">
             <p>John Doe</p>
+          </div>
+
+          <div class="hidden-sm footer_hidden_sm">
+            <ul>
+              <li><i class="far fa-arrow-alt-circle-down"></i></li>
+              <li><img src="img/profile.svg" alt=""></li>
+            </ul>
           </div>
         </section>
 
