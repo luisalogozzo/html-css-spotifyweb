@@ -245,6 +245,7 @@ a {
   border-radius: 20px;
   font-size: 14px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .call-to-action a:hover {
@@ -441,8 +442,18 @@ footer {
   margin: 0 10px;
 }
 
+.playback_time_icons i:hover {
+  cursor: pointer;
+
+}
+
+
 .playback_time_icons .fa-play-circle {
   font-size: 28px;
+}
+
+.playback_time_icons .fa-play-circle:hover {
+  font-size: 30px;
 }
 
 .playback_bar {
@@ -461,27 +472,49 @@ footer {
   font-weight: 600;
 }
 
-
-.playback_bar  .hr-1 {
+.hr-1 {
+  position: relative;
   width: 20%;
-  max-width: 82px;
+  max-width: 70px;
+  height: 3px;
+  background-color:  rgba(255, 255, 255, 0.6);
   margin-left: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
 }
 
-.playback_bar:hover  .hr-1 {
-  border: 2px solid lime;
-}
-
-
-.playback_bar  .hr-2 {
+.hr-2 {
   width: 80%;
-  max-width: 340px;
+  max-width: 290px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
   margin-right: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
 }
+
+.circle {
+  display: none;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 98%;
+}
+
+.playback_bar:hover .hr-1 {
+  background-color: #8ED132;
+  cursor: pointer;
+}
+
+.playback_bar:hover  .hr-1 .circle {
+  display: inline-block;
+}
+
+.playback_bar  .hr-2:hover {
+  cursor: pointer;
+}
+
 
 .volume ul {
   display: flex;
@@ -497,16 +530,30 @@ footer {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.hr-volume1{
+.hr-vol1 {
+  position: relative;
   width: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.hr-volume2 {
+.hr-vol2 {
   width: 80px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.volume:hover .hr-vol1 {
+  background-color: #8ED132;
+  cursor: pointer;
+}
+
+.volume:hover  .hr-vol1 .circle {
+  display: inline-block;
+}
+
+.volume  .hr-vol2:hover {
+  cursor: pointer;
 }
 
 
@@ -557,11 +604,11 @@ footer {
     justify-content: space-between;
   }
 
-  .hr-volume1{
+  .hr-vol1{
     width: 15px;
   }
 
-  .hr-volume2 {
+  .hr-vol2 {
     width: 60px;
   }
 
