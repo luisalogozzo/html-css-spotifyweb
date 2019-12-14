@@ -380,17 +380,17 @@ footer {
   background-color: #282828;
 }
 
-.playback_track {
+.player_track {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.playback_track p {
+.player_track p {
   font-size: 10px;
 }
 
-.playback_track img {
+.player_track img {
   width: 30px;
   height: auto;
   margin-right: 10px;
@@ -410,53 +410,53 @@ footer {
   cursor: pointer;
 }
 
-.playback_track i {
+.player_track i {
 
   margin-right: 10px;
   color: rgba(255, 255, 255, 0.4);
 }
 
-.playback_track div:last-child {
+.player_track div:last-child {
   font-size: 15px;
   font-weight: 500;
 }
 
-.playback_track div:last-child i:hover {
+.player_track div:last-child i:hover {
   color: white;
   cursor: pointer;
 }
 
-.playback_time {
+.player_time {
   flex-grow: 2;
 }
 
 
-.playback_time_icons {
+.player_time_icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.playback_time_icons i {
+.player_time_icons i {
   margin: 0 10px;
 }
 
-.playback_time_icons i:hover {
+.player_time_icons i:hover {
   cursor: pointer;
 
 }
 
 
-.playback_time_icons .fa-play-circle {
+.player_time_icons .fa-play-circle {
   font-size: 28px;
 }
 
-.playback_time_icons .fa-play-circle:hover {
+.player_time_icons .fa-play-circle:hover {
   font-size: 30px;
 }
 
-.playback_bar {
+.player_bar {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -467,7 +467,7 @@ footer {
   margin-left: 20px;
 }
 
-.playback_bar span {
+.player_bar span {
   font-size: 9px;
   font-weight: 600;
 }
@@ -498,19 +498,19 @@ footer {
   border-radius: 50%;
   position: absolute;
   top: -4px;
-  left: 100%;
+  left: 85%;
 }
 
-.playback_bar:hover .hr-1 {
+.player_bar:hover .hr-1 {
   background-color: #8ED132;
   cursor: pointer;
 }
 
-.playback_bar:hover  .hr-1 .circle {
+.player_bar:hover  .hr-1 .circle {
   display: inline-block;
 }
 
-.playback_bar  .hr-2:hover {
+.player_bar  .hr-2:hover {
   cursor: pointer;
 }
 
@@ -542,12 +542,12 @@ footer {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.volume:hover .hr-vol1 {
+.volume .hr-vol1:hover {
   background-color: #8ED132;
   cursor: pointer;
 }
 
-.volume:hover  .hr-vol1 .circle {
+.volume  .hr-vol1:hover .circle {
   display: inline-block;
 }
 
@@ -592,12 +592,12 @@ footer {
     margin-right: 0;
   }
 
-  .playback_track div:last-child {
+  .player_track div:last-child {
     display: flex;
     flex-direction: column;
   }
 
-  .playback_time {
+  .player_time {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -635,7 +635,7 @@ footer {
     margin-top: 10px;
   }
 
-  .playback_track div:last-child {
+  .player_track div:last-child {
     display: flex;
     flex-direction: column;
   }
@@ -650,7 +650,7 @@ footer {
     margin-bottom: 5px;
   }
 
-  .playback_track div:last-child {
+  .player_track div:last-child {
     display: flex;
     flex-direction: row;
   }
