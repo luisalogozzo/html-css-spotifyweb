@@ -462,7 +462,7 @@ footer {
 }
 
 .player_time_icons .fa-play-circle:hover {
-  font-size: 30px;
+  transform: scale(1.1);
 }
 
 .player_bar {
