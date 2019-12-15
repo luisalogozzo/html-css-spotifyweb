@@ -121,8 +121,16 @@ a {
 /* main-main-nav */
 .main-main-nav {
   flex-grow: 2;
-  overflow-y: scroll;
+  height:100%;
+
+
 }
+
+.playlist-ul {
+    overflow-y: scroll;
+    height:60%;
+}
+
 
 .create_playlist {
   display: flex;
@@ -175,6 +183,12 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.footer-main-nav {
+  background-color: black;
+  z-index: 3;
+}
+
+
 .footer-main-nav .install_app a {
   display: inline-block;
   line-height: 30px;
@@ -226,6 +240,9 @@ a {
 }
 
 .call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   right:0;
@@ -233,14 +250,14 @@ a {
   height: 90px;
   text-align: right;
   background-color: rgba(0, 0, 0, 0.5);
-  line-height: 90px;
   z-index: 2;
 }
 
 .call-to-action a {
+  display: inline-block;
   text-transform: uppercase;
   padding: 10px 35px;
-  margin-right: 10px;
+  margin-right: 25px;
   border: 1px solid white;
   border-radius: 20px;
   font-size: 14px;
@@ -249,9 +266,7 @@ a {
 }
 
 .call-to-action a:hover {
-  font-size: 16px;
-  padding: 13px 38px;
-  border-radius: 25px;
+  transform: scale(1.1);
 }
 
 .discover_nav {
@@ -378,6 +393,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #282828;
+  z-index: 3;
 }
 
 .player_track {
@@ -490,15 +506,16 @@ footer {
 }
 
 .circle {
+  position: absolute;
+  top: -4px;
+  left: 85%;
   display: none;
   vertical-align: middle;
   width: 12px;
   height: 12px;
   background-color: white;
   border-radius: 50%;
-  position: absolute;
-  top: -4px;
-  left: 85%;
+
 }
 
 .player_bar:hover .hr-1 {
@@ -530,24 +547,27 @@ footer {
 }
 
 .hr-vol1 {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 20px;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hr-vol2 {
-  width: 80px;
+  position: relative;
+  width: 100px;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.volume .hr-vol1:hover {
+.volume .hr-vol2:hover .hr-vol1 {
   background-color: #8ED132;
   cursor: pointer;
 }
 
-.volume  .hr-vol1:hover .circle {
+.volume  .hr-vol2:hover .circle {
   display: inline-block;
 }
 
